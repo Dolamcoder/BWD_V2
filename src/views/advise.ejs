@@ -34,12 +34,12 @@
                     <button id="closeMenuMobile" class="menu_mobile_close"><i class="fa fa-times"></i></button>
                 </div>
                 <div class="menu_mobile_item">
-                    <li class="active"><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Tư vấn ngành</a></li>
+                    <li><a href="/">Trang chủ</a></li>
+                    <li class="active"><a href="/advise">Tư vấn ngành</a></li>
                     <li><a href="#">Mô tả ngành</a></li>
                     <li><a href="#">Lộ trình học tập</a></li>
                     <li><a href="#">Cộng đồng</a></li>
-                    <li><a href="#">Đăng nhập</a></li>
+                    <li><a href="/login">Đăng nhập</a></li>
                 </div>
             </div>
         </div>
@@ -60,7 +60,7 @@
         <div class="avartar">
             <button class="avartarButton"><img src="/img/avartar.jpg" alt=""></button>
             <div class="dropdown-content dropdownMenuAvartar">
-                <a href="#">Trang cá nhân</a>
+                <a href="/profile">Trang cá nhân</a>
                 <a href="/login" class="logout">Đăng xuất</a>
             </div>
             <span class="userName" data-name="<%= user ? user.name : '' %>"></span>
@@ -81,8 +81,8 @@
                     <button id="closeMenuMobileScroll" class="menu_mobile_close"><i class="fa fa-times"></i></button>
                 </div>
                 <div class="menu_mobile_item">
-                    <li class="active"><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Tư vấn ngành</a></li>
+                    <li><a href="/">Trang chủ</a></li>
+                    <li class="active"><a href="#">Tư vấn ngành</a></li>
                     <li><a href="#">Mô tả ngành</a></li>
                     <li><a href="#">Lộ trình học tập</a></li>
                     <li><a href="#">Cộng đồng</a></li>
@@ -106,13 +106,13 @@
         <div class="avartar">
             <button class="avartarButton"><img src="/img/avartar.jpg" alt=""></button>
             <div class="dropdown-content dropdownMenuAvartar">
-                <a href="#">Trang cá nhân</a>
+                <a href="/profile">Trang cá nhân</a>
                 <a href="/login" class="logout">Đăng xuất</a>
             </div>
             <span class="userName" data-name="<%= user ? user.name : '' %>"></span>
         </div>
     </header>
-        <!-- hiển thị bước -->
+    <!-- hiển thị bước -->
     <section class="stepper-container container mt-1" role="navigation" aria-label="Các bước tư vấn">
         <div class="stepper d-flex justify-content-between mb-1">
             <div class="step" onclick="goToStep(1)">
@@ -317,7 +317,8 @@
                 </section>
 
                 <aside class="consultant-card">
-                    <h3 class="text-xl font-bold text-gray-800 mb-1"><i class="fab fa-facebook-messenger"></i> Chat với Chuyên Gia</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1"><i class="fab fa-facebook-messenger"></i> Chat với
+                        Chuyên Gia</h3>
                     <div class="chat-container">
                         <div class="flex items-start mb-4">
                             <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
@@ -412,7 +413,8 @@
                     Ngay</button>
             </section>
 
-            <section id="comparison-result" class="hidden max-w-4xl mx-auto bg-white p-6 rounded-xl shadow-sm fade-in" aria-live="polite">
+            <section id="comparison-result" class="hidden max-w-4xl mx-auto bg-white p-6 rounded-xl shadow-sm fade-in"
+                aria-live="polite">
                 <div class="flex justify-between items-center mb-6">
                     <h3 class="text-xl font-bold text-gray-800">Kết Quả So Sánh</h3>
                     <div class="flex space-x-2">
@@ -563,79 +565,81 @@
 
     <!-- footer -->
     <footer class="bg-dark text-white pt-5 pb-4">
-    <div class="container">
-      <div class="row g-5">
-        <!-- VKU Info -->
-        <div class="col-md-3">
-          <img src="/img/logon-removebg-preview.png" alt="" style="width: 100px; transform: translateY(-30px);">
-          <p class="text-white-50 small " style="transform: translateY(-30px);">
-            Trường Đại học Công nghệ Thông tin và Truyền thông Việt - Hàn (VKU)
-            là trường đại học công lập trực thuộc Đại học Đà Nẵng.
-          </p>
-        </div>
+        <div class="container">
+            <div class="row g-5">
+                <!-- VKU Info -->
+                <div class="col-md-3">
+                    <img src="/img/logon-removebg-preview.png" alt=""
+                        style="width: 100px; transform: translateY(-30px);">
+                    <p class="text-white-50 small " style="transform: translateY(-30px);">
+                        Trường Đại học Công nghệ Thông tin và Truyền thông Việt - Hàn (VKU)
+                        là trường đại học công lập trực thuộc Đại học Đà Nẵng.
+                    </p>
+                </div>
 
-        <!-- Liên hệ -->
-        <div class="col-md-3">
-          <h5 class="fw-bold mb-3">🤝 Liên hệ</h5>
-          <ul class="list-unstyled text-white-50 small">
-            <li class="d-flex mb-2 align-items-start">
-              <i class="fas fa-map-marker-alt me-2 text-warning mt-1"></i>
-              <span>470 Trần Đại Nghĩa, Hòa Quý, Ngũ Hành Sơn, Đà Nẵng</span>
-            </li>
-            <li class="d-flex mb-2 align-items-center">
-              <i class="fas fa-phone-alt me-2 text-warning"></i>
-              <span>(0236) 3 707 707</span>
-            </li>
-            <li class="d-flex align-items-center">
-              <i class="fas fa-envelope me-2 text-warning"></i>
-              <span>info@vku.udn.vn</span>
-            </li>
-          </ul>
-        </div>
+                <!-- Liên hệ -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-3">🤝 Liên hệ</h5>
+                    <ul class="list-unstyled text-white-50 small">
+                        <li class="d-flex mb-2 align-items-start">
+                            <i class="fas fa-map-marker-alt me-2 text-warning mt-1"></i>
+                            <span>470 Trần Đại Nghĩa, Hòa Quý, Ngũ Hành Sơn, Đà Nẵng</span>
+                        </li>
+                        <li class="d-flex mb-2 align-items-center">
+                            <i class="fas fa-phone-alt me-2 text-warning"></i>
+                            <span>0236.6.552.688</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-envelope me-2 text-warning"></i>
+                            <span>tuyensinh@vku.udn.vn</span>
+                        </li>
+                    </ul>
+                </div>
 
-        <!-- Hỗ trợ -->
-        <div class="col-md-3">
-          <h5 class="fw-bold mb-3">🔧 Hỗ trợ</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white-50 text-decoration-none d-block py-1 hover-opacity">Câu hỏi
-                thường gặp</a>
-            </li>
-            <li><a href="#" class="text-white-50 text-decoration-none d-block py-1 hover-opacity">Hướng dẫn
-                sử dụng</a>
-            </li>
-            <li><a href="#" class="text-white-50 text-decoration-none d-block py-1 hover-opacity">Chính sách
-                bảo mật</a>
-            </li>
-            <li><a href="#" class="text-white-50 text-decoration-none d-block py-1 hover-opacity">Điều khoản
-                dịch vụ</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Kết nối -->
-        <div class="col-md-3">
-          <h5 class="fw-bold mb-3">🌐 Kết nối với chúng tôi</h5>
-          <div class="d-flex mb-3">
-            <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"
-              style="border-color:#3b5998; color:#3b5998;"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"
-              style="border-color:#1DA1F2; color:#1DA1F2;"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"
-              style="border-color:#FF0000; color:#FF0000;"><i class="fab fa-youtube"></i></a>
-            <a href="#" class="btn btn-outline-light btn-sm rounded-circle"
-              style="border-color:#C13584; color:#C13584;"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
+                <!-- Hỗ trợ -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-3">🔧 Hỗ trợ</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block py-1 hover-opacity">Câu hỏi
+                                thường gặp</a>
+                        </li>
+                        <li><a href="https://www.facebook.com/olam.333246"
+                                class="text-white-50 text-decoration-none d-block py-1 hover-opacity">Hướng dẫn
+                                sử dụng</a>
+                        </li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block py-1 hover-opacity">Chính sách
+                                bảo mật</a>
+                        </li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block py-1 hover-opacity">Điều khoản
+                                dịch vụ</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Kết nối -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-3">🌐 Kết nối với chúng tôi</h5>
+                    <div class="d-flex mb-3">
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"
+                            style="border-color:#3b5998; color:#3b5998;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"
+                            style="border-color:#1DA1F2; color:#1DA1F2;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"
+                            style="border-color:#FF0000; color:#FF0000;"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"
+                            style="border-color:#C13584; color:#C13584;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
 
-      <hr class="border-secondary mt-0">
+            <hr class="border-secondary mt-0">
 
-      <div class="text-center text-white-50 mt-3 small">
-        <p>© 2025 Trường Đại học Công nghệ Thông tin và Truyền thông Việt - Hàn. Dù bạn là ai, bạn ở nơi nào
-          chúng tôi
-          luôn đồng hành cùng bạn.</p>
-      </div>
-    </div>
-  </footer>
+            <div class="text-center text-white-50 mt-3 small">
+                <p>© 2025 Trường Đại học Công nghệ Thông tin và Truyền thông Việt - Hàn. Dù bạn là ai, bạn ở nơi nào
+                    chúng tôi
+                    luôn đồng hành cùng bạn.</p>
+            </div>
+        </div>
+    </footer>
     <script src="/JavaScript/advise.js"></script>
     <script src="/JavaScript/header.js"></script>
     <script src="/JavaScript/checkStatuslogin.js"></script>
