@@ -399,7 +399,8 @@ header {
 /* Profile Page  */
 .profile-cover {
     height: 350px;
-    background: black;
+    background: url(https://media.discordapp.net/attachments/933521125433016321/954922215516819456/unknown.png?ex=68269c1d&is=68254a9d&hm=a0af578934d2881b03bc4f9c46f1e6421f7630aa1ee47cb1b182dc22855d00b5&=&format=webp&quality=lossless);
+    background-size: cover;
     background-position: top center;
     position: relative;
     margin-bottom: 100px;
