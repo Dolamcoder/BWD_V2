@@ -34,12 +34,12 @@
                     <button id="closeMenuMobile" class="menu_mobile_close"><i class="fa fa-times"></i></button>
                 </div>
                 <div class="menu_mobile_item">
-                    <li class="active"><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Tư vấn ngành</a></li>
+                    <li><a href="/">Trang chủ</a></li>
+                    <li class="active"><a href="/advise">Tư vấn ngành</a></li>
                     <li><a href="#">Mô tả ngành</a></li>
                     <li><a href="#">Lộ trình học tập</a></li>
                     <li><a href="#">Cộng đồng</a></li>
-                    <li><a href="#">Đăng nhập</a></li>
+                    <li><a href="/login">Đăng nhập</a></li>
                 </div>
             </div>
         </div>
@@ -60,7 +60,7 @@
         <div class="avartar">
             <button class="avartarButton"><img src="/img/avartar.jpg" alt=""></button>
             <div class="dropdown-content dropdownMenuAvartar">
-                <a href="#">Trang cá nhân</a>
+                <a href="/profile">Trang cá nhân</a>
                 <a href="/login" class="logout">Đăng xuất</a>
             </div>
             <span class="userName" data-name="<%= user ? user.name : '' %>"></span>
@@ -81,8 +81,8 @@
                     <button id="closeMenuMobileScroll" class="menu_mobile_close"><i class="fa fa-times"></i></button>
                 </div>
                 <div class="menu_mobile_item">
-                    <li class="active"><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Tư vấn ngành</a></li>
+                    <li><a href="/">Trang chủ</a></li>
+                    <li class="active"><a href="#">Tư vấn ngành</a></li>
                     <li><a href="#">Mô tả ngành</a></li>
                     <li><a href="#">Lộ trình học tập</a></li>
                     <li><a href="#">Cộng đồng</a></li>
@@ -106,7 +106,7 @@
         <div class="avartar">
             <button class="avartarButton"><img src="/img/avartar.jpg" alt=""></button>
             <div class="dropdown-content dropdownMenuAvartar">
-                <a href="#">Trang cá nhân</a>
+                <a href="/profile">Trang cá nhân</a>
                 <a href="/login" class="logout">Đăng xuất</a>
             </div>
             <span class="userName" data-name="<%= user ? user.name : '' %>"></span>
@@ -601,6 +601,11 @@
                         <li class="d-flex align-items-center">
                             <i class="fas fa-envelope me-2 text-warning"></i>
                             <span>info@vku.udn.vn</span>
+                            <span>0236.6.552.688</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-envelope me-2 text-warning"></i>
+                            <span>tuyensinh@vku.udn.vn</span>
                         </li>
                     </ul>
                 </div>
@@ -613,6 +618,8 @@
                                 thường gặp</a>
                         </li>
                         <li><a href="#" class="text-white-50 text-decoration-none d-block py-1 hover-opacity">Hướng dẫn
+                        <li><a href="https://www.facebook.com/olam.333246"
+                                class="text-white-50 text-decoration-none d-block py-1 hover-opacity">Hướng dẫn
                                 sử dụng</a>
                         </li>
                         <li><a href="#" class="text-white-50 text-decoration-none d-block py-1 hover-opacity">Chính sách
