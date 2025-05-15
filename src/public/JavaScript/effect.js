@@ -18,7 +18,7 @@
             counter.innerText = Math.ceil(count + increment);
             setTimeout(countUp, 10);
           } else {
-            if (target === 7000) {
+            if (target === 7000 || target === 5000) {
               counter.innerText = target.toLocaleString() + ' +';
             } else {
               counter.innerText = target.toLocaleString();

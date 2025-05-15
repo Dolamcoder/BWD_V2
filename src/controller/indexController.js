@@ -7,8 +7,13 @@ const getAdvise = (req, res) => {
 const getLogin = (req, res) => {
     res.render('login.ejs');
 }
+
+const getProfile = (req, res) => {
+    res.render('profile.ejs', { user: req.session.user});
+}
 module.exports = {
     getHome,
     getAdvise,
-    getLogin
+    getLogin,
+    getProfile
 }
