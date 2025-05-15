@@ -18,7 +18,11 @@
             counter.innerText = Math.ceil(count + increment);
             setTimeout(countUp, 10);
           } else {
-            counter.innerText = target.toLocaleString();
+            if (target === 7000) {
+              counter.innerText = target.toLocaleString() + ' +';
+            } else {
+              counter.innerText = target.toLocaleString();
+            }
           }
         };
         countUp();
