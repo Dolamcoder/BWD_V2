@@ -1,37 +1,47 @@
-const sendChatMessage = document.querySelector(".chat_input span");
-const chatInput = document.querySelector(".chat_input textarea");
-const chatbox = document.querySelector(".chatbox");
-let userMessage;
+document.addEventListener("DOMContentLoaded", function () {
+    const input = document.querySelector(".chat-footer input");
+    const sendBtn = document.querySelector(".chat-footer .btn");
+    const chatBody = document.querySelector(".chat-body");
 
-const createChat = (message, className) => {
-    const chatLi = document.createElement("li");
-    chatLi.classList.add(className, "chat");
+    function appendMessage(message, sender) {
+        const messageEl = document.createElement("div");
+        messageEl.classList.add("message", `${sender}-message`);
+        const avatar = document.createElement("div");
+        avatar.classList.add("avatar");
+        avatar.innerHTML = sender === "bot" ? '<i class="fas fa-robot"></i>' : '<i class="fas fa-user"></i>';
 
-    if (className === "outgoing") {
-        chatLi.innerHTML = `<p>${message}</p>`;
-        chatInput.value = ""; // Clear input
-    } else {
-        chatLi.innerHTML = `<span class="material-symbols-outlined">robot_2</span><p>${message}</p>`;
+        const content = document.createElement("div");
+        content.classList.add("content");
+        content.textContent = message;
+
+        if (sender === "bot") {
+            messageEl.appendChild(avatar);
+            messageEl.appendChild(content);
+        } else {
+            messageEl.appendChild(content);
+        }
+
+        chatBody.appendChild(messageEl);
+        chatBody.scrollTop = chatBody.scrollHeight;
     }
 
-    return chatLi;
-};
+    function sendMessage() {
+        const message = input.value.trim();
+        if (message !== "") {
+            appendMessage(message, "user");
+            input.value = "";
 
-const handleChat = () => {
-    userMessage = chatInput.value.trim();
-    if (!userMessage) return;
-
-    // Hiển thị tin nhắn người dùng
-    chatbox.appendChild(createChat(userMessage, "outgoing"));
-
-    // Cuộn xuống cuối
-    chatbox.scrollTop = chatbox.scrollHeight;
-
-    // Hiển thị phản hồi "đang gõ..." sau 600ms
-    setTimeout(() => {
-        chatbox.appendChild(createChat("Xin chào", "incoming"));
-        chatbox.scrollTop = chatbox.scrollHeight;
-    }, 600);
-};
-
-sendChatMessage.addEventListener("click", handleChat);
+            // Bot response giả lập
+            setTimeout(() => {
+                const botReply = "Bạn vừa nói: " + message;
+                appendMessage(botReply, "bot");
+            }, 500);
+        }
+    }
+    sendBtn.addEventListener("click", sendMessage);
+    input.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+            sendMessage();
+        }
+    });
+});
