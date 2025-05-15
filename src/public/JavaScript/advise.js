@@ -786,7 +786,6 @@ function showMatchingPrograms(hollandCode) {
             </div>
         `;
 }
-
 // func cho chat (ch xong)
 sendChatBtn.addEventListener('click', sendChatMessage);
 chatInput.addEventListenear('keydown', function (event) {
