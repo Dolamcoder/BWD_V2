@@ -1172,11 +1172,11 @@ footer .hover-opacity:hover {
   display: flex;
   align-items: center;
   width: fit-content;
-  animation: scroll-left 120s linear infinite;
+  animation: scroll-left 180s linear infinite;
 }
 
 .marquee-right .partner-track {
-  animation: scroll-right 120s linear infinite;
+  animation: scroll-right 180s linear infinite;
 }
 
 .partner-track:hover {

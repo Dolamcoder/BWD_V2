@@ -585,3 +585,9 @@ chatInput.addEventListenear('keydown', function (event) {
         sendChatMessage();
     }
 });
+// Xử lý form đặt lịch (có thể thêm logic gửi dữ liệu nếu cần)
+document.getElementById('consultation-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Đặt lịch thành công!');
+    this.reset();
+});

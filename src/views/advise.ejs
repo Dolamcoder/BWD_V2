@@ -112,7 +112,7 @@
             <span class="userName" data-name="<%= user ? user.name : '' %>"></span>
         </div>
     </header>
-        <!-- hiển thị bước -->
+    <!-- hiển thị bước -->
     <section class="stepper-container container mt-1" role="navigation" aria-label="Các bước tư vấn">
         <div class="stepper d-flex justify-content-between mb-1">
             <div class="step" onclick="goToStep(1)">
@@ -147,7 +147,7 @@
             </div>
         </div>
     </section>
-    <!-- nội dung b1 -->
+    <!-- nội dung bước -->
     <section class="container">
         <!-- buoc 1  -->
         <article id="step-1" class="step-content active" role="tabpanel" aria-labelledby="step1-tab">
@@ -174,7 +174,6 @@
                     gia để có quyết định chính xác nhất về ngành học.</p>
             </section>
         </article>
-
         <!-- bước 2 -->
         <article id="step-2" class="step-content" role="tabpanel" aria-labelledby="step2-tab">
             <section class="test-container">
@@ -256,125 +255,137 @@
                 </div>
             </section>
         </article>
-
-        <!-- tư vấn b3 -->
-        <article id="step-3" class="step-content" role="tabpanel" aria-labelledby="step3-tab">
-            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <section class="consultant-card">
-                    <h3 class="text-xl font-bold text-gray-800 mb-1">Đặt Lịch Tư Vấn</h3>
-                    <form id="consultation-form" role="form">
-                        <div class="mb-4">
-                            <label for="name" class="block text-gray-700 font-medium mb-2">Họ và tên</label>
-                            <input type="text" id="name"
-                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                        <div class="mb-4">
-                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-                            <input type="email" id="email"
-                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                        <div class="mb-4">
-                            <label for="phone" class="block text-gray-700 font-medium mb-2">Số điện thoại</label>
-                            <input type="tel" id="phone"
-                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                        <div class="mb-4">
-                            <label for="consult-type" class="block text-gray-700 font-medium mb-2">Hình thức tư
-                                vấn</label>
-                            <select id="consult-type"
-                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                <option value="online">Trực tuyến (Zoom/Google Meet)</option>
-                                <option value="chat">Chat trực tuyến</option>
-                                <option value="offline">Trực tiếp tại VKU</option>
-                            </select>
-                        </div>
-                        <div class="mb-4">
-                            <label for="date" class="block text-gray-700 font-medium mb-2">Ngày hẹn</label>
-                            <input type="date" id="date"
-                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                        <div class="mb-4">
-                            <label for="time" class="block text-gray-700 font-medium mb-2">Giờ hẹn</label>
-                            <select id="time"
-                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                <option value="08:00">8:00 - 9:00</option>
-                                <option value="09:00">9:00 - 10:00</option>
-                                <option value="10:00">10:00 - 11:00</option>
-                                <option value="13:00">13:00 - 14:00</option>
-                                <option value="14:00">14:00 - 15:00</option>
-                                <option value="15:00">15:00 - 16:00</option>
-                            </select>
-                        </div>
-                        <div class="mb-4">
-                            <label for="notes" class="block text-gray-700 font-medium mb-2">Ghi chú (nếu có)</label>
-                            <textarea id="notes" rows="3"
-                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                        </div>
-                        <button type="submit"
-                            class="w-full bg-blue-600 text-white py-3 rounded-md font-medium hover:bg-blue-700 transition">Đặt
-                            Lịch Ngay</button>
-                    </form>
+        <!-- bước 3 -->
+        <article id="step-3" class="container step-content py-5" role="tabpanel" aria-labelledby="step3-tab">
+            <div class="row g-4">
+                <!-- Form đặt lịch tư vấn -->
+                <section class="col-md-6">
+                    <div class="card p-4 h-100 shadow-sm booking">
+                        <h3 class="mb-3">Đặt Lịch Tư Vấn</h3>
+                        <form id="consultation-form">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Họ và tên</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Số điện thoại</label>
+                                <input type="tel" id="phone" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="consult-type" class="form-label">Hình thức tư vấn</label>
+                                <select id="consult-type" class="form-select">
+                                    <option value="online">Trực tuyến (Zoom/Google Meet)</option>
+                                    <option value="chat">Chat trực tuyến</option>
+                                    <option value="offline">Trực tiếp tại VKU</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="date" class="form-label">Ngày hẹn</label>
+                                <input type="date" id="date" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="time" class="form-label">Giờ hẹn</label>
+                                <select id="time" class="form-select">
+                                    <option value="08:00">8:00 - 9:00</option>
+                                    <option value="09:00">9:00 - 10:00</option>
+                                    <option value="10:00">10:00 - 11:00</option>
+                                    <option value="13:00">13:00 - 14:00</option>
+                                    <option value="14:00">14:00 - 15:00</option>
+                                    <option value="15:00">15:00 - 16:00</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="notes" class="form-label">Ghi chú (nếu có)</label>
+                                <textarea id="notes" rows="3" class="form-control"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Đặt Lịch Ngay</button>
+                        </form>
+                    </div>
                 </section>
 
-                <aside class="consultant-card">
-                    <h3 class="text-xl font-bold text-gray-800 mb-1"><i class="fab fa-facebook-messenger"></i> Chat với Chuyên Gia</h3>
-                    <div class="chat-container">
-                        <div class="flex items-start mb-4">
-                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                                <i class="fas fa-robot text-blue-600"></i>
+                <!-- Chatbot & Lịch tư vấn -->
+                <aside class="col-md-6 d-flex flex-column">
+                    <!-- Chatbot -->
+                    <div class="card p-3 mb-1 shadow-sm chatbox">
+                        <a href="/experts" class="fw-bold text-dark expert-link">
+                            <i class="fab fa-facebook-messenger me-2"></i>Chat với Chuyên Gia
+                        </a>
+                        <!-- Chatbox -->
+                        <div class="chatbox">
+                            <div class="chat-header">
+                                <div class="header-info">
+                                    <h2 class="logo-text"><i class="fas fa-robot"></i> Chatbot</h2>
+                                </div>
                             </div>
-                            <div class="bg-white p-3 rounded-lg shadow-sm max-w-xs">
-                                <p class="text-gray-800">Xin chào! Tôi là trợ lý ảo của VKU. Tôi có thể giúp gì cho bạn?
-                                </p>
+                            <div class="chat-body">
+                                <div class="message bot-message">
+                                    <div class="avatar"><i class="fas fa-robot"></i></div>
+                                    <div class="content">Xin chào! Tôi là Chatbot, sẵn sàng hỗ trợ bạn.</div>
+                                </div>
                             </div>
-                        </div>
-
-                        <div id="chat-messages" class="h-64 overflow-y-auto mb-4">
-                            <!-- Chat message hiển thị ở đây = js (ch xong)-->
-                        </div>
-
-                        <div class="flex">
-                            <input type="text" id="chat-input" placeholder="Nhập câu hỏi của bạn..."
-                                class="flex-1 px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                            <button id="send-chat-btn"
-                                class="bg-blue-600 text-white px-4 py-2 rounded-r-md hover:bg-blue-700 transition">
-                                <i class="fas fa-paper-plane"></i>
-                            </button>
+                            <div class="chat-footer">
+                                <div class="d-flex">
+                                    <input type="text" class="form-control" placeholder="Nhập tin nhắn...">
+                                    <button class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <section class="schedule">
-                        <h4 class="font-bold text-gray-800 mb-4">Lịch Tư Vấn Định Kỳ</h4>
-                        <div class="space-y-3">
-                            <div class="flex items-start p-3 bg-blue-50 rounded-lg">
-                                <div class="bg-blue-100 text-blue-800 px-3 py-1 rounded-md mr-3 text-sm font-medium">Thứ
-                                    2</div>
+
+                    <!-- Lịch tư vấn định kỳ -->
+                    <div class="card p-4 flex-grow-1 shadow-sm">
+                        <h5 class="fw-bold text-dark mb-3">Lịch Tư Vấn</h5>
+                        <div class="overflow-auto" style="max-height: 220px;">
+                            <div class="d-flex align-items-start mb-3 bg-primary-subtle rounded p-2">
+                                <div class="badge bg-primary text-white me-3">Thứ 2</div>
                                 <div>
-                                    <p class="font-medium text-gray-800">Tư vấn ngành Công nghệ Thông tin</p>
-                                    <p class="text-sm text-gray-600">14:00 - 16:00 | Phòng 301</p>
+                                    <div class="fw-semibold">Tư vấn ngành Công nghệ Thông tin</div>
+                                    <p>TS. Lê Thị Thu Nga | Phó Khoa - Khoa học máy tính</p>
+                                    <small class="text-muted">14:00 - 16:00 | Trực tuyến</small>
                                 </div>
                             </div>
-                            <div class="flex items-start p-3 bg-purple-50 rounded-lg">
-                                <div
-                                    class="bg-purple-100 text-purple-800 px-3 py-1 rounded-md mr-3 text-sm font-medium">
-                                    Thứ 4</div>
+                            <div class="d-flex align-items-start mb-3 bg-success-subtle rounded p-2">
+                                <div class="badge bg-success text-white me-3">Thứ 3</div>
                                 <div>
-                                    <p class="font-medium text-gray-800">Tư vấn ngành Kinh tế - Quản trị</p>
-                                    <p class="text-sm text-gray-600">9:00 - 11:00 | Phòng 205</p>
+                                    <div class="fw-semibold">Tư vấn ngành Kinh tế</div>
+                                    <p>Ths - Trần Ngọc Phương Thảo</p>
+                                    <small class="text-muted">13:00 - 15:00 | Trực tuyến</small>
                                 </div>
                             </div>
-                            <div class="flex items-start p-3 bg-green-50 rounded-lg">
-                                <div class="bg-green-100 text-green-800 px-3 py-1 rounded-md mr-3 text-sm font-medium">
-                                    Thứ 6</div>
+                            <div class="d-flex align-items-start mb-3 bg-primary-subtle rounded p-2">
+                                <div class="badge bg-primary text-white me-3">Thứ 4</div>
                                 <div>
-                                    <p class="font-medium text-gray-800">Tư vấn ngành Ngôn ngữ - Truyền thông</p>
-                                    <p class="text-sm text-gray-600">13:00 - 15:00 | Phòng 102</p>
+                                    <div class="fw-semibold">Tư vấn ngành Trí tuệ nhân tạo</div>
+                                    <p>Sinh viên - Trần Lê Quốc Anh </p>
+                                    <small class="text-muted">14:00 - 16:00 | Trực tuyến</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start mb-3 bg-success-subtle rounded p-2">
+                                <div class="badge bg-success text-white me-3">Thứ 6</div>
+                                <div>
+                                    <div class="fw-semibold">Tư vấn ngành An toàn thông tin</div>
+                                    <p>Sinh viên - Phan Nguyễn Thành Quang </p>
+                                    <small class="text-muted">13:00 - 15:00 | Trực tuyến</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start mb-3 bg-success-subtle rounded p-2">
+                                <div class="badge bg-success text-white me-3">Thứ 6</div>
+                                <div>
+                                    <div class="fw-semibold">Tư vấn ngành Công nghệ game</div>
+                                    <p>Sinh viên - Đỗ Lam </p>
+                                    <small class="text-muted">13:00 - 15:00 | Trực tuyến</small>
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </aside>
             </div>
         </article>
+
 
         <!-- so sánh ngành b4 -->
         <article id="step-4" class="step-content" role="tabpanel" aria-labelledby="step4-tab">
@@ -412,7 +423,8 @@
                     Ngay</button>
             </section>
 
-            <section id="comparison-result" class="hidden max-w-4xl mx-auto bg-white p-6 rounded-xl shadow-sm fade-in" aria-live="polite">
+            <section id="comparison-result" class="hidden max-w-4xl mx-auto bg-white p-6 rounded-xl shadow-sm fade-in"
+                aria-live="polite">
                 <div class="flex justify-between items-center mb-6">
                     <h3 class="text-xl font-bold text-gray-800">Kết Quả So Sánh</h3>
                     <div class="flex space-x-2">
@@ -501,7 +513,7 @@
                 </div>
                 <div class="mt-6 text-center">
                     <button
-                        class="bg-blue-600 text-white px-6 py-2 rounded-md font-medium hover:bg-blue-700 transition mr-3">
+                        class="bg-blue-600 text-white px-6 py-2 rounded-md font-medium hover:bg-blue-700 transition mr-3 mb-3">
                         <i class="fas fa-download mr-2"></i> Tải Báo Cáo Đầy Đủ
                     </button>
                     <button
@@ -511,7 +523,6 @@
                 </div>
             </section>
         </article>
-
         <!-- đánh giá b6 -->
         <article id="step-6" class="step-content" role="tabpanel" aria-labelledby="step6-tab">
             <section class="card p-4 shadow">
@@ -563,83 +574,85 @@
 
     <!-- footer -->
     <footer class="bg-dark text-white pt-5 pb-4">
-    <div class="container">
-      <div class="row g-5">
-        <!-- VKU Info -->
-        <div class="col-md-3">
-          <img src="/img/logon-removebg-preview.png" alt="" style="width: 100px; transform: translateY(-30px);">
-          <p class="text-white-50 small " style="transform: translateY(-30px);">
-            Trường Đại học Công nghệ Thông tin và Truyền thông Việt - Hàn (VKU)
-            là trường đại học công lập trực thuộc Đại học Đà Nẵng.
-          </p>
-        </div>
+        <div class="container">
+            <div class="row g-5">
+                <!-- VKU Info -->
+                <div class="col-md-3">
+                    <img src="/img/logon-removebg-preview.png" alt=""
+                        style="width: 100px; transform: translateY(-30px);">
+                    <p class="text-white-50 small " style="transform: translateY(-30px);">
+                        Trường Đại học Công nghệ Thông tin và Truyền thông Việt - Hàn (VKU)
+                        là trường đại học công lập trực thuộc Đại học Đà Nẵng.
+                    </p>
+                </div>
 
-        <!-- Liên hệ -->
-        <div class="col-md-3">
-          <h5 class="fw-bold mb-3">🤝 Liên hệ</h5>
-          <ul class="list-unstyled text-white-50 small">
-            <li class="d-flex mb-2 align-items-start">
-              <i class="fas fa-map-marker-alt me-2 text-warning mt-1"></i>
-              <span>470 Trần Đại Nghĩa, Hòa Quý, Ngũ Hành Sơn, Đà Nẵng</span>
-            </li>
-            <li class="d-flex mb-2 align-items-center">
-              <i class="fas fa-phone-alt me-2 text-warning"></i>
-              <span>(0236) 3 707 707</span>
-            </li>
-            <li class="d-flex align-items-center">
-              <i class="fas fa-envelope me-2 text-warning"></i>
-              <span>info@vku.udn.vn</span>
-            </li>
-          </ul>
-        </div>
+                <!-- Liên hệ -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-3">🤝 Liên hệ</h5>
+                    <ul class="list-unstyled text-white-50 small">
+                        <li class="d-flex mb-2 align-items-start">
+                            <i class="fas fa-map-marker-alt me-2 text-warning mt-1"></i>
+                            <span>470 Trần Đại Nghĩa, Hòa Quý, Ngũ Hành Sơn, Đà Nẵng</span>
+                        </li>
+                        <li class="d-flex mb-2 align-items-center">
+                            <i class="fas fa-phone-alt me-2 text-warning"></i>
+                            <span>(0236) 3 707 707</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-envelope me-2 text-warning"></i>
+                            <span>info@vku.udn.vn</span>
+                        </li>
+                    </ul>
+                </div>
 
-        <!-- Hỗ trợ -->
-        <div class="col-md-3">
-          <h5 class="fw-bold mb-3">🔧 Hỗ trợ</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white-50 text-decoration-none d-block py-1 hover-opacity">Câu hỏi
-                thường gặp</a>
-            </li>
-            <li><a href="#" class="text-white-50 text-decoration-none d-block py-1 hover-opacity">Hướng dẫn
-                sử dụng</a>
-            </li>
-            <li><a href="#" class="text-white-50 text-decoration-none d-block py-1 hover-opacity">Chính sách
-                bảo mật</a>
-            </li>
-            <li><a href="#" class="text-white-50 text-decoration-none d-block py-1 hover-opacity">Điều khoản
-                dịch vụ</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Kết nối -->
-        <div class="col-md-3">
-          <h5 class="fw-bold mb-3">🌐 Kết nối với chúng tôi</h5>
-          <div class="d-flex mb-3">
-            <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"
-              style="border-color:#3b5998; color:#3b5998;"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"
-              style="border-color:#1DA1F2; color:#1DA1F2;"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"
-              style="border-color:#FF0000; color:#FF0000;"><i class="fab fa-youtube"></i></a>
-            <a href="#" class="btn btn-outline-light btn-sm rounded-circle"
-              style="border-color:#C13584; color:#C13584;"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
+                <!-- Hỗ trợ -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-3">🔧 Hỗ trợ</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block py-1 hover-opacity">Câu hỏi
+                                thường gặp</a>
+                        </li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block py-1 hover-opacity">Hướng dẫn
+                                sử dụng</a>
+                        </li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block py-1 hover-opacity">Chính sách
+                                bảo mật</a>
+                        </li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block py-1 hover-opacity">Điều khoản
+                                dịch vụ</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Kết nối -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-3">🌐 Kết nối với chúng tôi</h5>
+                    <div class="d-flex mb-3">
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"
+                            style="border-color:#3b5998; color:#3b5998;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"
+                            style="border-color:#1DA1F2; color:#1DA1F2;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"
+                            style="border-color:#FF0000; color:#FF0000;"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"
+                            style="border-color:#C13584; color:#C13584;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
 
-      <hr class="border-secondary mt-0">
+            <hr class="border-secondary mt-0">
 
-      <div class="text-center text-white-50 mt-3 small">
-        <p>© 2025 Trường Đại học Công nghệ Thông tin và Truyền thông Việt - Hàn. Dù bạn là ai, bạn ở nơi nào
-          chúng tôi
-          luôn đồng hành cùng bạn.</p>
-      </div>
-    </div>
-  </footer>
+            <div class="text-center text-white-50 mt-3 small">
+                <p>© 2025 Trường Đại học Công nghệ Thông tin và Truyền thông Việt - Hàn. Dù bạn là ai, bạn ở nơi nào
+                    chúng tôi
+                    luôn đồng hành cùng bạn.</p>
+            </div>
+        </div>
+    </footer>
     <script src="/JavaScript/advise.js"></script>
     <script src="/JavaScript/header.js"></script>
     <script src="/JavaScript/checkStatuslogin.js"></script>
     <script src="/JavaScript/avartar.js"></script>
+    <script src="/JavaScript/chatbot.js"></script>
 </body>
 
 </html>
