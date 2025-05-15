@@ -123,240 +123,6 @@ function options5() {
     ];
 }
 
-// object câu hỏi b2
-const questionsB2 = [
-    {
-        id: 1,
-        text: "Bạn thích làm việc với dữ liệu hay sáng tạo nội dung?",
-        type: "slider",
-        options: [
-            { text: "Dữ liệu", value: 0 },
-            { text: "Sáng tạo", value: 100 }
-        ]
-    },
-    {
-        id: 2,
-        text: "Bạn giỏi giải quyết vấn đề logic hay giao tiếp với mọi người?",
-        type: "slider",
-        options: [
-            { text: "Logic", value: 0 },
-            { text: "Giao tiếp", value: 100 }
-        ]
-    },
-    {
-        id: 3,
-        text: "Bạn ưu tiên thu nhập cao hay môi trường sáng tạo?",
-        type: "slider",
-        options: [
-            { text: "Thu nhập", value: 0 },
-            { text: "Sáng tạo", value: 100 }
-        ]
-    },
-    {
-        id: 4,
-        text: "Bạn hướng ngoại hay hướng nội?",
-        type: "slider",
-        options: [
-            { text: "Hướng nội", value: 0 },
-            { text: "Hướng ngoại", value: 100 }
-        ]
-    },
-    {
-        id: 5,
-        text: "Bạn thích làm việc theo quy trình hay linh hoạt?",
-        type: "slider",
-        options: [
-            { text: "Quy trình", value: 0 },
-            { text: "Linh hoạt", value: 100 }
-        ]
-    },
-    {
-        id: 6,
-        text: "Bạn quan tâm đến công nghệ mới hay các vấn đề xã hội?",
-        type: "slider",
-        options: [
-            { text: "Công nghệ", value: 0 },
-            { text: "Xã hội", value: 100 }
-        ]
-    },
-    {
-        id: 7,
-        text: "Bạn thích làm việc độc lập hay theo nhóm?",
-        type: "slider",
-        options: [
-            { text: "Độc lập", value: 0 },
-            { text: "Nhóm", value: 100 }
-        ]
-    },
-    {
-        id: 8,
-        text: "Bạn thích công việc ổn định hay nhiều thử thách?",
-        type: "slider",
-        options: [
-            { text: "Ổn định", value: 0 },
-            { text: "Thử thách", value: 100 }
-        ]
-    },
-    {
-        id: 9,
-        text: "Bạn quan tâm đến chi tiết hay bức tranh tổng thể?",
-        type: "slider",
-        options: [
-            { text: "Chi tiết", value: 0 },
-            { text: "Tổng thể", value: 100 }
-        ]
-    },
-    {
-        id: 10,
-        text: "Bạn thích làm việc với con số hay ý tưởng?",
-        type: "slider",
-        options: [
-            { text: "Con số", value: 0 },
-            { text: "Ý tưởng", value: 100 }
-        ]
-    },
-    {
-        id: 11,
-        text: "Bạn thích tham gia hoạt động xã hội hay nghiên cứu chuyên sâu?",
-        type: "slider",
-        options: [
-            { text: "Nghiên cứu", value: 0 },
-            { text: "Xã hội", value: 100 }
-        ]
-    },
-    {
-        id: 12,
-        text: "Bạn thích học các môn tự nhiên hay xã hội hơn?",
-        type: "slider",
-        options: [
-            { text: "Tự nhiên", value: 0 },
-            { text: "Xã hội", value: 100 }
-        ]
-    },
-    {
-        id: 13,
-        text: "Bạn mong muốn một công việc ổn định hay có cơ hội thăng tiến nhanh?",
-        type: "slider",
-        options: [
-            { text: "Ổn định", value: 0 },
-            { text: "Thăng tiến", value: 100 }
-        ]
-    },
-    {
-        id: 14,
-        text: "Bạn muốn làm việc trong môi trường năng động hay yên tĩnh?",
-        type: "slider",
-        options: [
-            { text: "Yên tĩnh", value: 0 },
-            { text: "Năng động", value: 100 }
-        ]
-    },
-    {
-        id: 15,
-        text: "Bạn có thích giúp đỡ người khác giải quyết vấn đề cá nhân không?",
-        type: "slider",
-        options: [
-            { text: "Không thích", value: 0 },
-            { text: "Rất thích", value: 100 }
-        ]
-    },
-    {
-        id: 16,
-        text: "Bạn thường chủ động lên kế hoạch hay thích làm việc theo cảm hứng?",
-        type: "slider",
-        options: [
-            { text: "Lên kế hoạch", value: 0 },
-            { text: "Theo cảm hứng", value: 100 }
-        ]
-    },
-    {
-        id: 17,
-        text: "Bạn có thích sử dụng máy tính và phần mềm không?",
-        type: "slider",
-        options: [
-            { text: "Không thích", value: 0 },
-            { text: "Rất thích", value: 100 }
-        ]
-    },
-    {
-        id: 18,
-        text: "Bạn có hứng thú với việc kinh doanh và đầu tư không?",
-        type: "slider",
-        options: [
-            { text: "Không hứng thú", value: 0 },
-            { text: "Rất hứng thú", value: 100 }
-        ]
-    },
-    {
-        id: 19,
-        text: "Bạn thích lập trình máy tính không?",
-        type: "slider",
-        options: [
-            { text: "Không thích", value: 0 },
-            { text: "Rất thích", value: 100 }
-        ]
-    },
-    {
-        id: 20,
-        text: "Bạn muốn làm việc ở công ty lớn hay khởi nghiệp nhỏ?",
-        type: "choice",
-        options: [
-            { text: "Công ty lớn", value: "big_corp" },
-            { text: "Khởi nghiệp", value: "startup" }
-        ]
-    },
-    {
-        id: 21,
-        text: "Bạn muốn làm việc tại Việt Nam hay nước ngoài?",
-        type: "choice",
-        options: [
-            { text: "Việt Nam", value: "vietnam" },
-            { text: "Nước ngoài", value: "abroad" },
-            { text: "Không biet", value: "unknown" },
-            { text: "Không quan tài", value: "not_sure" }
-        ]
-    },
-    {
-        id: 22,
-        text: "Bạn muốn học ngành thiên về kỹ thuật hay nhân văn?",
-        type: "choice",
-        options: [
-            { text: "Kỹ thuật", value: "engineering" },
-            { text: "Nhân văn", value: "humanities" }
-        ]
-    },
-    {
-        id: 23,
-        text: "Bạn có thích thuyết trình trước đám đông không?",
-        type: "slider",
-        options: [
-            { text: "Không thích", value: 0 },
-            { text: "Rất thích", value: 100 }
-        ]
-    },
-    {
-        id: 24,
-        text: "Bạn muốn công việc thiên về tay nghề hay trí tuệ?",
-        type: "choice",
-        options: [
-            { text: "Tay nghề", value: "skill" },
-            { text: "Trí tuệ", value: "intellectual" }
-        ]
-    },
-    {
-        id: 25,
-        text: "Bạn cảm thấy hứng thú hơn với sản phẩm hữu hình hay dịch vụ?",
-        type: "choice",
-        options: [
-            { text: "Sản phẩm", value: "product" },
-            { text: "Dịch vụ", value: "service" }
-        ]
-    }
-];
-
-// Thêm câu hỏi Holland vào mảng questions
-questions.push(...questionsB2);
-
 // object dữ liệu ngành
 const programs = [
     {
@@ -582,9 +348,9 @@ function setupHollandNav() {
 // 6. Hiển thị kết quả Holland Code
 function showHollandResults() {
   document.getElementById('test-questions').classList.add('hidden');
-  testResults.classList.remove('hidden');
+  document.getElementById('test-results').classList.remove('hidden');
   // Gom đáp án thành mảng answers như cũ
-let answers = [];
+  let answers = [];
   hollandGroups.forEach(g => {
     Object.entries(hollandAnswers[g.code] || {}).forEach(([qid, value]) => {
       answers.push({ questionId: parseInt(qid), value });
@@ -596,73 +362,140 @@ let answers = [];
 
 // --- Kích hoạt logic mới khi bắt đầu test ---
 document.addEventListener('DOMContentLoaded', function () {
-  const startTestBtn = document.getElementById('start-test-btn');
-  const testIntro = document.getElementById('test-intro');
-  const testQuestions = document.getElementById('test-questions');
-  const testResults = document.getElementById('test-results');
-  const resultsContainer = document.getElementById('results-container');
-
-  startTestBtn.addEventListener('click', function () {
-    testIntro.classList.add('hidden');
-    testQuestions.classList.remove('hidden');
-    hollandCurrentGroup = 0;
-    hollandAnswers = {};
-    renderHollandGroup();
-    setupHollandNav();
-  });
-
-  // Giữ nguyên các hàm renderHollandGroup, setupHollandNav, showResults, ...
+    // Initialize first step
+    goToStep(1);
+    
+    // Start test button
+    const startTestBtn = document.getElementById('start-test-btn');
+    const testIntro = document.getElementById('test-intro');
+    const testQuestions = document.getElementById('test-questions');
+    
+    if (startTestBtn) {
+        startTestBtn.onclick = function(e) {
+            e.preventDefault();
+            console.log('Start test button clicked');
+            
+            // Make sure we're on step 2 (test step)
+            goToStep(2);
+            
+            // Show questions, hide intro
+            if (testIntro && testQuestions) {
+                testIntro.classList.add('hidden');
+                testQuestions.classList.remove('hidden');
+                
+                // Initialize test
+                hollandCurrentGroup = 0;
+                hollandAnswers = {};
+                renderHollandGroup();
+                setupHollandNav();
+            } else {
+                console.error('Test intro or questions elements not found');
+            }
+        };
+    }
+    
+    // Retake test button
+    const retakeBtn = document.getElementById('retake-btn');
+    if (retakeBtn) {
+        retakeBtn.onclick = function(e) {
+            e.preventDefault();
+            goToStep(2); // Go back to test step
+            document.getElementById('test-results').classList.add('hidden');
+            document.getElementById('test-intro').classList.remove('hidden');
+            localStorage.removeItem('hollandResults');
+            hollandCurrentGroup = 0;
+        };
+    }
 });
 
 // --- Sửa showResults để nhận answers truyền vào (nếu có) ---
 function showResults(answersOverride) {
-    testQuestions.classList.add('hidden');
-    testResults.classList.remove('hidden');
-    const useAnswers = answersOverride || answers;
-    const hollandScores = calculateHollandScores(useAnswers);
-    const sortedTypes = Object.entries(hollandScores)
+    const answers = answersOverride || getAnswers();
+    const scores = calculateHollandScores(answers);
+    
+    // Sort scores to get top 3 types
+    const sortedTypes = Object.entries(scores)
         .sort(([,a], [,b]) => b - a)
-        .slice(0, 3);
-    const hollandCode = sortedTypes.map(([type]) => type).join("");
-    let resultsHTML = `
-        <div class="w-full bg-white p-6 rounded-lg border border-gray-200 mb-6">
-            <h3 class="text-2xl font-bold text-gray-800 mb-4">Kết quả Holland Code của bạn: ${hollandCode}</h3>
-            <p class="text-gray-600 mb-6">Dưới đây là phân tích chi tiết về 3 nhóm tính cách nghề nghiệp phù hợp nhất với bạn:</p>
-            <div class="space-y-6">
-    `;
-    sortedTypes.forEach(([type, score], index) => {
-        const typeInfo = getHollandTypeDescription(type);
-        resultsHTML += `
-            <div class="bg-gray-50 p-6 rounded-lg">
-                <div class="flex items-center justify-between mb-4">
-                    <h4 class="text-xl font-bold text-blue-800">${index + 1}. ${typeInfo.name}</h4>
-                    <div class="text-lg font-bold text-blue-600">${Math.round(score)}%</div>
-                </div>
-                <div class="grid md:grid-cols-2 gap-4">
-                    <div>
-                        <p class="font-medium text-gray-700 mb-2">Đặc điểm nổi bật:</p>
-                        <p class="text-gray-600 mb-4">${typeInfo.traits}</p>
-                        <p class="font-medium text-gray-700 mb-2">Điểm mạnh:</p>
-                        <p class="text-gray-600">${typeInfo.strengths}</p>
-                    </div>
-                    <div>
-                        <p class="font-medium text-gray-700 mb-2">Nghề nghiệp phù hợp:</p>
-                        <p class="text-gray-600 mb-4">${typeInfo.careers}</p>
-                        <p class="font-medium text-gray-700 mb-2">Mô tả:</p>
-                        <p class="text-gray-600">${typeInfo.description}</p>
-                    </div>
-                </div>
-            </div>
-        `;
-    });
-    resultsHTML += `
-            </div>
-        </div>
-    `;
-    resultsContainer.innerHTML = resultsHTML;
-    // Hiển thị các ngành học phù hợp
-    showMatchingPrograms(hollandCode);
+        .slice(0, 3)
+        .map(([type]) => type);
+    
+    // Hide questions, show results
+    document.getElementById('test-questions').classList.add('hidden');
+    document.getElementById('test-results').classList.remove('hidden');
+    
+    // Clear previous results
+    const resultsContainer = document.getElementById('results-container');
+    resultsContainer.innerHTML = '';
+    
+    // Show matching programs based on Holland code
+    showMatchingPrograms(sortedTypes.join(''));
+    
+    // Save results for final step
+    localStorage.setItem('hollandResults', JSON.stringify({
+        types: sortedTypes,
+        scores: scores
+    }));
 }
+
+function showMatchingPrograms(hollandCode) {
+    const resultsContainer = document.getElementById('results-container');
+    resultsContainer.innerHTML = ''; // Clear previous results
+    
+    // Sort programs by fit score
+    const sortedPrograms = [...programs].sort((a, b) => b.fitScore - a.fitScore).slice(0, 3);
+    
+    // Display each program
+    sortedPrograms.forEach(program => {
+        const programCard = document.createElement('div');
+        programCard.className = 'bg-white p-4 rounded-lg shadow-sm';
+        programCard.innerHTML = `
+            <h4 class="text-lg font-bold text-gray-800 mb-2">${program.name}</h4>
+            <p class="text-gray-600 mb-3">${program.description}</p>
+            <div class="flex items-center mb-3">
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="bg-blue-600 h-2 rounded-full" style="width: ${program.fitScore}%"></div>
+                </div>
+                <span class="ml-2 text-sm font-medium text-gray-600">${program.fitScore}%</span>
+            </div>
+            <ul class="mb-4">
+                ${program.strengths.map(s => `<li class="flex items-center text-sm text-gray-600 mb-1">
+                    <i class="fas fa-check-circle text-green-500 mr-2"></i>${s}
+                </li>`).join('')}
+            </ul>
+            <a href="${program.link}" class="text-blue-600 hover:text-blue-800 text-sm font-medium">
+                Tìm hiểu thêm <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+        `;
+        resultsContainer.appendChild(programCard);
+    });
+}
+
+// Add event listeners when document loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Setup Holland test navigation
+    setupHollandNav();
+    
+    // Start test button
+    const startTestBtn = document.getElementById('start-test-btn');
+    if (startTestBtn) {
+        startTestBtn.addEventListener('click', function() {
+            document.getElementById('test-intro').classList.add('hidden');
+            document.getElementById('test-questions').classList.remove('hidden');
+            renderHollandGroup();
+        });
+    }
+    
+    // Retake test button
+    const retakeBtn = document.getElementById('retake-btn');
+    if (retakeBtn) {
+        retakeBtn.addEventListener('click', function() {
+            document.getElementById('test-results').classList.add('hidden');
+            document.getElementById('test-intro').classList.remove('hidden');
+            localStorage.removeItem('hollandResults');
+            currentHollandGroup = 0;
+        });
+    }
+});
 
 // Thêm các hàm cũ khác
 function calculateHollandScores(answers) {
@@ -745,47 +578,6 @@ function getHollandTypeDescription(type) {
     return descriptions[type] || {};
 }
 
-function showMatchingPrograms(hollandCode) {
-    // Định nghĩa mối quan hệ giữa Holland Code và các ngành học
-    const programMatches = {
-        "RIC": ["cntt"],
-        "RIA": ["truyen-thong"],
-        "SEC": ["qtkd", "kt"],
-        "SAE": ["nn", "mkt"],
-        // Thêm các combination khác tùy theo ngành học của trường
-    };
-
-    // Tìm các ngành phù hợp
-    let matchingProgramIds = [];
-    Object.entries(programMatches).forEach(([code, ids]) => {
-        if (code.split("").some(c => hollandCode.includes(c))) {
-            matchingProgramIds.push(...ids);
-        }
-    });
-
-    // Lọc các ngành học phù hợp
-    const matchingPrograms = programs.filter(p => matchingProgramIds.includes(p.id));
-
-    // Hiển thị các ngành phù hợp
-        resultsContainer.innerHTML += `
-        <div class="w-full bg-white p-6 rounded-lg border border-gray-200">
-            <h3 class="text-xl font-bold text-gray-800 mb-4">Ngành học phù hợp với bạn:</h3>
-            <div class="grid md:grid-cols-2 gap-4">
-                ${matchingPrograms.map(program => `
-                    <div class="program-card bg-white p-4 rounded-lg border border-gray-200">
-                        <h4 class="text-lg font-bold text-gray-800 mb-2">${program.name}</h4>
-                        <p class="text-gray-600 text-sm mb-3">${program.description}</p>
-                        <div class="flex flex-wrap gap-2">
-                            ${program.strengths.map(strength => 
-                                `<span class="advantage-badge bg-blue-100 text-blue-800">${strength}</span>`
-                            ).join('')}
-                </div>
-                    </div>
-                `).join('')}
-            </div>
-            </div>
-        `;
-}
 // func cho chat (ch xong)
 sendChatBtn.addEventListener('click', sendChatMessage);
 chatInput.addEventListenear('keydown', function (event) {
